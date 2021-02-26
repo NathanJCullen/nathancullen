@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -15,38 +15,72 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1fd2906efd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="top-nav">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" onclick="topFunction()">NJSolutions</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#packages">Packages</a>
-            </li>
-          </ul>
+    <div data-aos="fade-in" data-aos-duration="2000" class="landing">
+      <div class="landing-content">
+        <div class="landing-text">
+          <div class="name">
+            <h1>Nathan Cullen</h1>
+          </div>
+          <div class="short-bio">
+            <p>
+              Self-taught web developer from the UK. Striving to learn more and
+              more every day.
+            </p>
+          </div>
         </div>
-      </nav>
+        <div class="nav">
+          <nav class="navbar navbar-expand-lg">
+            <div id="navbarText">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#packages">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#packages">Projects</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="socials">
+          <a
+            style="color: #0e76a8"
+            href="https://www.linkedin.com/in/nathan-cullen-85b3631ba/"
+          >
+            <i class="fab fa-linkedin-in"></i
+          ></a>
+          <a style="color: #6e5494" href="https://github.com/nathanjcullen">
+            <i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
     </div>
-    <div class="div1">
-      <h1 class="title">Hello World</h1>
-    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="./index.js"></script>
   </body>
 </html>

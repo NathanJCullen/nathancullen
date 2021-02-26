@@ -4,14 +4,15 @@
 
 html {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar-brand {
-  font-size: 2rem;
-  font-family: "Quicksand", sans-serif;
-  margin-left: 2%;
-  cursor: pointer;
+body {
+  font-family: "Source Code Pro", monospace;
+}
+
+.navbar {
+  justify-content: center;
+  margin: auto;
 }
 
 .navbar ul {
@@ -19,7 +20,7 @@ html {
 }
 
 .nav-item {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -39,4 +40,70 @@ html {
 
 .nav-item:hover:after {
   transform: scaleX(1);
+}
+
+.nav-link {
+  color: black;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  color: #019fb6;
+}
+
+.landing {
+  height: 100vh;
+}
+
+.landing-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+
+.landing-text {
+  width: 80%;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.name h1 {
+  font-size: 5rem;
+  color: black;
+}
+
+.short-bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.short-bio p {
+  font-size: 2rem;
+  width: 50%;
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials a {
+  font-size: 3rem;
+  margin: 10%;
+}
+
+.socials a:hover {
+  transform: scale(1.25);
 }
