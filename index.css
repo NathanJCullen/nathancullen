@@ -18,14 +18,7 @@ body {
   font-size: 2.5rem;
   position: fixed;
   margin: 2%;
-}
-
-.corner-name a {
-  color: black;
-  font-family: "Indie Flower", cursive;
-}
-.corner-name a:hover {
-  text-decoration: none;
+  display: none;
 }
 
 .navbar {
@@ -35,11 +28,13 @@ body {
 
 .navbar ul {
   margin-right: 2%;
+  flex-direction: row;
 }
 
 .nav-item {
-  font-size: 2rem;
+  font-size: 1.1rem;
   font-family: "Quicksand", sans-serif;
+  margin: 2%;
 }
 
 .navbar-collapse {
@@ -79,12 +74,12 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  width: 70% !important;
+  width: 90% !important;
   margin: auto;
 }
 
 .landing-text {
-  width: 80%;
+  width: 100%;
   font-weight: 600;
 }
 
@@ -93,11 +88,11 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .name h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .short-bio {
@@ -108,8 +103,8 @@ body {
 }
 
 .short-bio p {
-  font-size: 2rem;
-  width: 50%;
+  font-size: 1.1rem;
+  width: 100%;
   font-weight: 500;
 }
 
@@ -118,152 +113,328 @@ body {
 }
 
 .socials a {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 10%;
 }
 
-.socials a:hover {
-  transform: scale(1.25);
+/* Media Queries */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 }
 
-.section-title {
-  text-align: center;
-  font-size: 3rem;
-  padding: 3%;
-}
-
-.skills {
-  height: 60vh;
-}
-
-.skills-content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.skills-details {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 350px);
-}
-
-.skill {
-  justify-self: center;
-  background: white;
-  height: 350px;
-  width: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  font-family: "Open Sans", sans-serif;
-}
-
-.skill-header {
-  padding: 10px;
-  background: #f0f8ff;
-  text-align: center;
-  font-size: 2.5rem;
-  color: black;
-  font-weight: 400;
-}
-
-.skill-text {
-  margin: auto;
-  margin-top: 5%;
-  text-align: center;
-  width: 80%;
-  font-size: 1.1rem;
-}
-
-.skill:hover {
-  transform: scale(1.1);
-}
-
-.about {
-  height: 70vh;
-
-  /* background: #f5f5f5; */
-}
-
-.about-content {
-  /* background: white; */
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.about-selection {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 250px;
-  /* background: yellow; */
-}
-
-.selections {
-  display: grid;
-  /* background: chartreuse; */
-  width: 500px;
-  height: 400px;
-  grid-template-rows: repeat(4, 80px);
-  grid-gap: 1rem;
-  justify-content: flex-end;
-  align-content: center;
-  padding: 50px;
-}
-
-.selection {
-  width: 200px;
-  height: 100%;
-  background: white;
-  border: 5px solid #f0f8ff;
-  border-radius: 10px;
-}
-
-.selection:hover {
-  animation: pulse 0.75s infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    color: red;
   }
-  50% {
+  .short-bio p {
+    font-size: 1.4rem;
+    width: 60%;
+    font-weight: 500;
+  }
+
+  .name {
+    margin-bottom: 2%;
+  }
+
+  .name h1 {
+    font-size: 4rem;
+  }
+  .socials a {
+    font-size: 2.5rem;
+    margin: 10%;
+  }
+  .nav-item {
+    font-size: 1.4rem;
+    font-family: "Quicksand", sans-serif;
+    margin: 2%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    color: blue;
+  }
+  .socials a:hover {
+    transform: scale(1.25);
+  }
+  .short-bio p {
+    font-size: 1.7rem;
+    width: 50%;
+    font-weight: 500;
+  }
+  .name h1 {
+    font-size: 4rem;
+  }
+  .socials a {
+    font-size: 3rem;
+    margin: 10%;
+  }
+  .nav-item {
+    font-size: 1.7rem;
+    font-family: "Quicksand", sans-serif;
+    margin: 2%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1441px) {
+  body {
+    color: yellow;
+  }
+  .corner-name {
+    font-size: 2.5rem;
+    position: fixed;
+    margin: 2%;
+  }
+
+  .corner-name a {
+    color: black;
+    font-family: "Indie Flower", cursive;
+  }
+  .corner-name a:hover {
+    text-decoration: none;
+  }
+
+  .navbar {
+    justify-content: center;
+    margin: auto;
+  }
+
+  .navbar ul {
+    margin-right: 2%;
+  }
+
+  .nav-item {
+    font-size: 2rem;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .navbar-collapse {
+    margin-left: 2%;
+  }
+
+  .nav-item:after {
+    display: block;
+    content: "";
+    margin: auto;
+    border-bottom: solid 5px white;
+    width: 70%;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .nav-item:hover:after {
+    transform: scaleX(1);
+  }
+
+  .nav-link {
+    color: black;
+    font-weight: 400;
+  }
+
+  .nav-link:hover {
+    color: white;
+  }
+
+  .landing {
+    height: 100vh;
+  }
+
+  .landing-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 70% !important;
+    margin: auto;
+  }
+
+  .landing-text {
+    width: 80%;
+    font-weight: 600;
+  }
+
+  .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  .name h1 {
+    font-size: 5rem;
+  }
+
+  .short-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .short-bio p {
+    font-size: 2rem;
+    width: 50%;
+    font-weight: 500;
+  }
+
+  .socials {
+    display: flex;
+  }
+
+  .socials a {
+    font-size: 3rem;
+    margin: 10%;
+  }
+
+  .socials a:hover {
+    transform: scale(1.25);
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 3rem;
+    padding: 3%;
+  }
+
+  .skills {
+    height: 60vh;
+  }
+
+  .skills-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-details {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+  }
+
+  .skill {
+    justify-self: center;
+    background: white;
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .skill-header {
+    padding: 10px;
+    background: #f0f8ff;
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 400;
+  }
+
+  .skill-text {
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    width: 80%;
+    font-size: 1.1rem;
+  }
+
+  .skill:hover {
     transform: scale(1.1);
   }
-  100% {
-    transform: scale(1);
+
+  .about {
+    height: 70vh;
+
+    /* background: #f5f5f5; */
   }
-}
 
-.about-section {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+  .about-content {
+    /* background: white; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
 
-.about-text {
-  background: #f0f8ff;
-  border: 5px solid white;
-  border-radius: 10px;
-  width: 700px;
-  height: 400px;
-}
+  .about-selection {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 250px;
+    /* background: yellow; */
+  }
 
-.selection-header {
-  text-align: center;
-  font-size: 1.5rem;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  color: black;
-}
+  .selections {
+    display: grid;
+    /* background: chartreuse; */
+    width: 500px;
+    height: 400px;
+    grid-template-rows: repeat(4, 80px);
+    grid-gap: 1rem;
+    justify-content: flex-end;
+    align-content: center;
+    padding: 50px;
+  }
 
-.about-text > div {
-  display: none;
+  .selection {
+    width: 200px;
+    height: 100%;
+    background: white;
+    border: 5px solid #f0f8ff;
+    border-radius: 10px;
+  }
+
+  .selection:hover {
+    animation: pulse 0.75s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .about-text {
+    background: #f0f8ff;
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 700px;
+    height: 400px;
+  }
+
+  .selection-header {
+    text-align: center;
+    font-size: 1.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: black;
+  }
+
+  .about-text > div {
+    display: none;
+  }
 }
