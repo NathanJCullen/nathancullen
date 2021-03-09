@@ -261,6 +261,30 @@ body {
 }
 /*  */
 
+/* Projects */
+
+.projects {
+  width: 100%;
+  margin: auto;
+}
+
+.project {
+  margin: 5%;
+}
+.fa-arrow-left,
+.fa-arrow-right {
+  font-size: 1.5rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: black;
+  width: 5%;
+  /* border-radius: 20px; */
+}
+
+/*  */
+
 /* Media Queries */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -270,7 +294,7 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   body {
-    color: red;
+    /* color: red; */
   }
   .section-title {
     text-align: center;
@@ -405,7 +429,7 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   body {
-    color: blue;
+    /* color: blue; */
   }
   .socials a:hover {
     transform: scale(1.25);
@@ -454,14 +478,24 @@ body {
   }
 
   .about-text {
-    width: 600px;
+    width: 700px;
+  }
+  .projects {
+    width: 80%;
+    margin: auto;
+  }
+  .project-info {
+    font-size: 1.5rem;
+  }
+  .project-info h4 {
+    font-size: 2rem;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1441px) {
   body {
-    color: yellow;
+    /* color: yellow; */
   }
   .corner-name {
     font-size: 2.5rem;
@@ -628,7 +662,12 @@ body {
     transform: scale(1.1);
   }
 
-  .about {
-    /* background: #f5f5f5; */
+  .projects {
+    width: 60%;
+    margin: auto;
+  }
+
+  .carousel {
+    /* border-radius: 20px; */
   }
 }
