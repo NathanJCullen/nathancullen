@@ -41,16 +41,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
-  <body id="top">
-    <h4
-      class="corner-name"
-      data-aos="fade-in"
-      data-aos-duration="2000"
-      data-aos-offset="1000"
-    >
-      <a href="#top"> NCullen</a>
-    </h4>
-
+  <body>
     <div data-aos="fade-in" data-aos-duration="2000" class="landing">
       <div class="landing-content">
         <div class="landing-text">
@@ -69,13 +60,13 @@
             <div id="navbarText">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#packages">Projects</a>
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
                 </li>
               </ul>
             </div>
@@ -92,6 +83,7 @@
             <i class="fab fa-github"></i
           ></a>
         </div>
+        <div class="contact">Email: nathancullen1097@gmail.com</div>
       </div>
     </div>
     <div class="skills" id="skills">
@@ -127,7 +119,7 @@
 
     <div class="projects">
       <div class="projects-content">
-        <h1 class="section-title">Projects</h1>
+        <h1 class="section-title" id="projects">Projects</h1>
         <div class="project">
           <div class="project-info">
             <a href="https://nathanjcullen.github.io/NJSolutions/"
@@ -144,16 +136,6 @@
             data-ride="carousel"
             data-interval="false"
           >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#project-carousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#njsolutions-carousel" data-slide-to="1"></li>
-              <li data-target="#njsolutions-carousel" data-slide-to="2"></li>
-              <li data-target="#njsolutions-carousel" data-slide-to="3"></li>
-            </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
@@ -202,6 +184,9 @@
             </a>
           </div>
         </div>
+
+        <hr />
+
         <div class="project">
           <div class="project-info">
             <a href="https://lolteamshower.herokuapp.com/"
@@ -215,15 +200,6 @@
             data-interval="false"
             data-ride="carousel"
           >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#project-carousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#lol-carousel" data-slide-to="1"></li>
-              <li data-target="#lol-carousel" data-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
@@ -265,6 +241,8 @@
             </a>
           </div>
         </div>
+
+        <hr />
         <div class="project">
           <div class="project-info">
             <a href="https://weatherwatchapp.herokuapp.com/"
@@ -282,16 +260,6 @@
             data-ride="carousel"
             data-interval="false"
           >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#project-carousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#weather-carousel" data-slide-to="1"></li>
-              <li data-target="#weather-carousel" data-slide-to="2"></li>
-              <li data-target="#weather-carousel" data-slide-to="3"></li>
-            </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
@@ -340,6 +308,7 @@
             </a>
           </div>
         </div>
+        <hr />
       </div>
     </div>
 
@@ -355,9 +324,6 @@
             <div class="selection" id="skylls">
               <p class="selection-header">Skills</p>
             </div>
-            <div class="selection" id="learning">
-              <p class="selection-header">Learning Roadmap</p>
-            </div>
             <div class="selection" id="interests">
               <p class="selection-header">Interests</p>
             </div>
@@ -365,10 +331,49 @@
         </div>
         <div class="about-section">
           <div class="about-text">
-            <div class="general">One</div>
-            <div class="skylls">Two</div>
-            <div class="learning">Three</div>
-            <div class="interests">Four</div>
+            <div class="general">
+              I started coding in Nov 2018. I began with Python and created a
+              few basic applications including a Twitter bot using the Twitter
+              API and a weather API as well as a Premier League Football
+              analysis tool.
+              <br />
+              <br />
+              After this, I moved onto Javascript and completed an online Udemy
+              course titled ‘Web Development Bootcamp’.
+              <br />
+              <br />
+              The course had multiple sections ranging from basic HTML and
+              Javascript all the through to working with databases. The end goal
+              of the course is to follow along and deploy a working website.
+              <br />
+              <br />
+              After completing, I moved onto building my own sites using the
+              skills I had learned.
+            </div>
+            <div class="skylls">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>JQuery</li>
+                <li>Bootstrap</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+                <li>React</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            <div class="interests">
+              <p>
+                <strong>Running</strong> - Trained for and took part of a 10k
+                charity race, finishing 17th/207.
+              </p>
+              <p>
+                <strong>Rubiks Cube </strong> - Collection ranging from 2x2s to
+                5x5.
+              </p>
+              <p><strong>Online gaming.</strong></p>
+            </div>
           </div>
         </div>
       </div>
