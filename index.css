@@ -208,8 +208,8 @@ body {
 
 .selection {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 125px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   margin: 1%;
   background: white;
   border: 5px solid #f0f8ff;
