@@ -245,7 +245,8 @@ body {
   border: 5px solid white;
   border-radius: 10px;
   width: 600px;
-  height: 700px;
+  min-height: 200px;
+  height: 100%;
   padding: 2%;
 }
 
@@ -276,6 +277,10 @@ body {
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 7%;
+  background: #f0f8ff;
+  border: 5px solid white;
+  padding: 2%;
+  border-radius: 10px;
 }
 .fa-arrow-left,
 .fa-arrow-right {
@@ -290,8 +295,6 @@ body {
 }
 
 .projects {
-  background: #f0f8ff;
-  border: 5px solid white;
   border-radius: 10px;
   width: 90%;
   margin: auto;
